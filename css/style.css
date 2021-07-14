@@ -37,6 +37,7 @@ body{
 }
 .button:hover{
     background-color: #fa003e;
+    transition: width 2s, height 4s;
 }
 .fa-arrow-right{
     margin-left: 8px;
@@ -149,7 +150,7 @@ body{
     .container{
         width: 100%;
     }
-    .blogs {
+    .blogs{
         grid-template-columns: repeat(1, 1fr);
     }
 }
