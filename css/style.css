@@ -6,24 +6,37 @@ body{
     sans-serif;
     margin: 0;
 }
+
 /* header style */
 .container{
     background-color: #2D25A0;
     margin-bottom: 70px;
 }
-.head-text{
+.header{
     color: #FFFFFF;
+    font-weight: 700;
+    padding: 135px 140px 86px 156px;
+    display: flex;
+}
+.text{
+    margin-right: 50px;
+}
+.header h1{
+    margin-bottom: 27px;
+    margin-right: 102px;
     font-size: 64px;
     font-weight: 700;
-    padding: 207px 102px 240px 156px;
-    display: flex;
 }
 .button{
     background-color: #E02C6D;
     color: #FFFFFF;
-    padding: 10px 56px 10px 24px;
+    font-size: 16px;
+    padding: 10px 24px 10px 24px;
     border: 0;
-    margin-top: 0px 419px 169px 156px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #fa003e;
 }
 .fa-arrow-right{
     margin-left: 8px;
@@ -43,12 +56,42 @@ body{
 }
 .blog{
     background-color: white;
-    border: 1px solid gray;
     padding: 15px 15px 33px 15px;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 .blog img{
     width: 300px;
     height: 256px;
+    margin-bottom: 16px;
+    margin-right: 0;
+}
+.blog h1{
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+}
+.blog p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* footer section style */
+.footer-section{
+    background-color: #e7e2e2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 182px 30px 182px;
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+.play{
+    width: 567px;
+    height: 427px;
+    margin-right: 100px;
 }
 /* footer style */
 .footer{
@@ -62,7 +105,7 @@ body{
     width: 483.87px;
     height: 110px;
     margin-bottom: 20px;
-    margin-top: 158px;
+    margin-top: 10px;
 }
 .social-icon{
     width: 170px;
@@ -95,4 +138,26 @@ body{
     font-size: 18px;
     margin-top: 20px;
 }
+
+/* media-query */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* style end */
